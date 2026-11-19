@@ -1,19 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/fondo_pantalla"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imgLogoLogin"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/desc_logo"
+        android:src="@mipmap/ic_launcher_round" />
+
     <TextView
+        android:id="@+id/tvTituloLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginBottom="24dp"
+        android:text="@string/titulo_login"
+        android:textColor="@color/texto_principal"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/etCorreoLogin"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginBottom="12dp"
+        android:autofillHints="emailAddress"
+        android:hint="@string/hint_correo"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/texto_principal"
+        android:textColorHint="@color/texto_secundario" />
+
+    <EditText
+        android:id="@+id/etContrasenaLogin"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginBottom="20dp"
+        android:autofillHints="password"
+        android:hint="@string/hint_contrasena"
+        android:inputType="textPassword"
+        android:textColor="@color/texto_principal"
+        android:textColorHint="@color/texto_secundario" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        style="@style/EstiloBotonViaje"
+        android:layout_marginBottom="16dp"
+        android:text="@string/btn_ingresar" />
+
+    <TextView
+        android:id="@+id/tvIrRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/txt_ir_registro"
+        android:textColor="@color/primario"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
