@@ -1,3 +1,57 @@
 <resources>
-    <string name="app_name">Itinerario_de_viaje</string>
+    <string name="app_name">RutaPro Viajes</string>
+
+    <!-- Login -->
+    <string name="desc_logo">Logo de RutaPro Viajes</string>
+    <string name="titulo_login">Bienvenido a RutaPro</string>
+    <string name="hint_correo">Correo electrónico (ej. viajero@ejemplo.cl)</string>
+    <string name="hint_contrasena">Contraseña</string>
+    <string name="btn_ingresar">Iniciar Sesión</string>
+    <string name="txt_ir_registro">¿No tienes cuenta? Regístrate aquí</string>
+
+    <!-- Registro -->
+    <string name="titulo_registro">Crear Cuenta de Viajero</string>
+    <string name="hint_nombre">Nombre completo (ej. Camila Soto)</string>
+    <string name="hint_pais_origen">País de residencia</string>
+    <string name="hint_repetir_contrasena">Repetir contraseña</string>
+    <string name="pregunta_tipo_viaje">¿Qué tipo de viaje prefieres?</string>
+    <string name="rb_playa">Playa y descanso</string>
+    <string name="rb_aventura">Aventura y montaña</string>
+    <string name="rb_ciudad">Cultura y ciudad</string>
+    <string name="chk_terminos">Acepto los términos y políticas de privacidad</string>
+    <string name="btn_registrar">Registrarme</string>
+
+    <!-- Lista -->
+    <string name="titulo_lista">Mis Itinerarios</string>
+    <string name="btn_nuevo_viaje">+ Nuevo Viaje</string>
+    <string name="btn_asistente_ia">Asistente IA</string>
+    <string name="viaje1_titulo">Escapada a Chiloé</string>
+    <string name="viaje1_subtitulo">5 días • Castro, Dalcahue y Ancud</string>
+    <string name="viaje2_titulo">Desierto de Atacama</string>
+    <string name="viaje2_subtitulo">3 días • San Pedro y Valle de la Luna</string>
+    <string name="viaje3_titulo">Ruta Carretera Austral</string>
+    <string name="viaje3_subtitulo">7 días • Puerto Varas a Futaleufú</string>
+
+    <!-- Agregar -->
+    <string name="titulo_agregar">Nuevo Itinerario</string>
+    <string name="hint_destino">Destino principal (ej. Pucón)</string>
+    <string name="hint_fechas">Fechas o duración (ej. 10 al 14 de Dic)</string>
+    <string name="hint_presupuesto">Presupuesto estimado en CLP</string>
+    <string name="hint_notas">Actividades y lugares a visitar</string>
+    <string name="btn_guardar_viaje">Guardar Itinerario</string>
+
+    <!-- Detalle -->
+    <string name="titulo_detalle">Detalle del Viaje</string>
+    <string name="detalle_destino">Escapada a Chiloé (5 Días)</string>
+    <string name="detalle_fechas">Fecha: 15 al 20 de Diciembre • Presupuesto: $350.000</string>
+    <string name="detalle_descripcion">Día 1: Llegada a Castro y visita a palafitos.\nDía 2: Feria artesanal de Dalcahue e Isla Quinchao.\nDía 3: Parque Nacional Chiloé en Cucao.\nDía 4: Pingüineras de Puñihuil en Ancud.\nDía 5: Regreso.</string>
+    <string name="btn_editar">Editar</string>
+    <string name="btn_eliminar">Eliminar</string>
+    <string name="btn_marcar">Marcar Realizado</string>
+
+    <!-- IA -->
+    <string name="titulo_ia">Planificador IA de Rutas</string>
+    <string name="hint_prompt_ia">Escribe tu destino y días (ej. 3 días en Valdivia)</string>
+    <string name="btn_preguntar_ia">Generar Sugerencia</string>
+    <string name="respuesta_ejemplo_ia">Sugerencia para 3 días en Valdivia:\n\n• Día 1: Mercado Fluvial, paseo costanera y Jardín Botánico UACh.\n• Día 2: Navegación a Isla Mancera y Fuerte de Niebla.\n• Día 3: Parque Oncol y degustación en cervecería local.</string>
 </resources>
