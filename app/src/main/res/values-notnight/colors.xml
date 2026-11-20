@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primario">#82B1FF</color>
-    <color name="primario_variante">#448AFF</color>
-    <color name="secundario">#4DB6AC</color>
-    <color name="fondo_pantalla">#121212</color>
-    <color name="fondo_tarjeta">#1E1E1E</color>
-    <color name="texto_principal">#E2E2E6</color>
-    <color name="texto_secundario">#A0A4A8</color>
-    <color name="texto_boton">#002171</color>
-    <color name="peligro">#EF5350</color>
+    <color name="primario">#0D47A1</color>
+    <color name="primario_variante">#002171</color>
+    <color name="secundario">#00897B</color>
+    <color name="fondo_pantalla">#F5F7FA</color>
+    <color name="fondo_tarjeta">#FFFFFF</color>
+    <color name="texto_principal">#1A1C1E</color>
+    <color name="texto_secundario">#5E6368</color>
+    <color name="texto_boton">#FFFFFF</color>
+    <color name="peligro">#C62828</color>
 </resources>

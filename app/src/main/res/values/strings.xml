@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">RutaPro Viajes</string>
+    <string name="desc_toggle_tema">Cambiar modo claro y oscuro</string>
 
     <!-- Login -->
     <string name="desc_logo">Logo de RutaPro Viajes</string>
@@ -54,4 +55,5 @@
     <string name="hint_prompt_ia">Escribe tu destino y días (ej. 3 días en Valdivia)</string>
     <string name="btn_preguntar_ia">Generar Sugerencia</string>
     <string name="respuesta_ejemplo_ia">Sugerencia para 3 días en Valdivia:\n\n• Día 1: Mercado Fluvial, paseo costanera y Jardín Botánico UACh.\n• Día 2: Navegación a Isla Mancera y Fuerte de Niebla.\n• Día 3: Parque Oncol y degustación en cervecería local.</string>
+    <string name="respuesta_con_prompt">Sugerencia generada para \"%1$s\":\n\n• Día 1: Recorrido histórico y centro urbano.\n• Día 2: Parque natural y atracciones gastronómicas.\n• Día 3: Actividades culturales y tiempo libre.</string>
 </resources>

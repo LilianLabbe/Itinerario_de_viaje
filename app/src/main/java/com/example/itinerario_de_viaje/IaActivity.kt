@@ -18,9 +18,9 @@ class IaActivity : AppCompatActivity() {
         btnPreguntarIa?.setOnClickListener {
             val prompt = etPromptIa?.text?.toString()?.trim().orEmpty()
             if (prompt.isNotEmpty()) {
-                tvRespuestaIa?.text = "Sugerencia generada para \"$prompt\":\n\n• Día 1: Recorrido histórico y centro urbano.\n• Día 2: Parque natural y atracciones gastronómicas.\n• Día 3: Actividades culturales y tiempo libre."
+                tvRespuestaIa?.text = getString(R.string.respuesta_con_prompt, prompt)
             } else {
-                tvRespuestaIa?.text = "Sugerencia generada:\n\n• Día 1: Recorrido histórico y centro urbano.\n• Día 2: Parque natural y atracciones gastronómicas."
+                tvRespuestaIa?.setText(R.string.respuesta_ejemplo_ia)
             }
         }
     }
