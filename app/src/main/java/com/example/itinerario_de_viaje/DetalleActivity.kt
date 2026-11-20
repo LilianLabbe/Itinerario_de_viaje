@@ -1,8 +1,8 @@
 package com.example.itinerario_de_viaje
 
 import android.os.Bundle
-import android.view.ViewGroup
 import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class DetalleActivity : AppCompatActivity() {
@@ -10,21 +10,22 @@ class DetalleActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detalle)
 
-        // Detecta automáticamente el botón en activity_detalle.xml sin fallar por nombre de ID
-        val root = findViewById<ViewGroup>(android.R.id.content)
-        encontrarPrimerBoton(root)?.setOnClickListener {
+        val btnMarcarRealizado = findViewById<Button>(R.id.btnMarcarRealizado)
+        val btnEditarViaje = findViewById<Button>(R.id.btnEditarViaje)
+        val btnEliminarViaje = findViewById<Button>(R.id.btnEliminarViaje)
+
+        btnMarcarRealizado?.setOnClickListener {
+            Toast.makeText(this, "Itinerario marcado como realizado", Toast.LENGTH_SHORT).show()
             finish()
         }
-    }
 
-    private fun encontrarPrimerBoton(grupo: ViewGroup): Button? {
-        for (i in 0 until grupo.childCount) {
-            val hijo = grupo.getChildAt(i)
-            if (hijo is Button) return hijo
-            if (hijo is ViewGroup) {
-                encontrarPrimerBoton(hijo)?.let { return it }
-            }
+        btnEditarViaje?.setOnClickListener {
+            Toast.makeText(this, "Modo edición no disponible en la vista previa", Toast.LENGTH_SHORT).show()
         }
-        return null
+
+        btnEliminarViaje?.setOnClickListener {
+            Toast.makeText(this, "Itinerario eliminado", Toast.LENGTH_SHORT).show()
+            finish()
+        }
     }
 }
